@@ -12,12 +12,7 @@ public class Quiz3 {
 //		   89~80 : B
 //		   79~70 : C
 	
-		Scanner sc=new Scanner(System.in);
-		System.out.println("학점을 입력하세요 : ");
-		int score = sc.nextInt();
 		
-		switch(score)
-		case 1 
 		
 	}
 

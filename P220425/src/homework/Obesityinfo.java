@@ -6,17 +6,18 @@ public class Obesityinfo extends StandardWeightinfo {
 		super(name, height, weight);
 	}
 	
-	 public double getObesity() {
-		 double obesity = (weight - 100) * 0.9;
-		 return obesity;
-	 }
+	@Override
+	public void getInformation() {
+		if(getStandardWeight() < weight) {
+		System.out.println(name + "�� ���� " + height + ", ������ " +  weight + ", " + "���Դϴ�.");
+	}else {
+		System.out.println(name + "�� ���� " + height + ", ������ " +  weight + ", "  + "���� �ƴմϴ�.");
+
+	}
+	}
 	
-//	@Override
-//	public void getinformation() {
-//		if( < ) {
-//		System.out.println(name + "님의 신장 " + height + ", 몸무게 " + weight + ", 비만입니다."  );
-//	  }else {
-//		  System.out.println(name + "님의 신장 " + height + ", 몸무게 " + weight + ", 비만이 아닙니다."  );
-//	  }
-//	}
+	public double getObesity() {
+	    return weight / getStandardWeight() * 100 ;
+	   
+	}
 }

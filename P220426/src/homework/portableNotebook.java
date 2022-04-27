@@ -13,7 +13,7 @@ public class portableNotebook implements Notebook, Tablet {
 		this.internet = internet;
 		this.video = video;
 		this.app = app;
-		mode = NOTEBOOK_MODE;
+		mode = Notebook.NOTEBOOK_MODE;
 		System.out.println("NOTEBOOK_MODE");
 	}
 	
@@ -35,8 +35,7 @@ public class portableNotebook implements Notebook, Tablet {
 	@Override
 	public void useApp() {
 		if(mode == NOTEBOOK_MODE) {
-			mode++;
-			System.out.println("TABLET_MODE");
+			changMode();
 			System.out.println(app + "를 실행.");
 		}else {
 			System.out.println(app + "를 실행.");
@@ -46,7 +45,7 @@ public class portableNotebook implements Notebook, Tablet {
 
 	public void changMode() {
 	  if(mode == NOTEBOOK_MODE) {
-		mode++;
+		this.mode = Tablet.TABLET_MODE;
 		System.out.println("TABLET_MODE");
 	} else if(mode == TABLET_MODE) {
 			mode--;

@@ -10,16 +10,15 @@ public class Question2 {
 		
 		try {
 		     method1();
-		}catch(Exception e){
-            System.out.println(1);
+		}catch( NullPointerException e){
+           
 			
-			System.out.println(2);
 			
+		}finally {
 			System.out.println(3);
 			
 			System.out.println(4);
 			
-		}finally {
 			
 		}
 		

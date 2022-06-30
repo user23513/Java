@@ -1,6 +1,6 @@
 package co.edu.book;
 
-public class bookVO {
+public class BookVO {
 	
 	private String bookCode;
 	private String bookName;
@@ -39,7 +39,9 @@ public class bookVO {
 	public void setBookAmt(int bookAmt) {
 		this.bookAmt = bookAmt;
 	}
+	
+	
+	
+	
 
-	
-	
 }
